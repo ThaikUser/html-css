@@ -14,10 +14,20 @@
             position: absolute;
             left: 240px;
             box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.205);
+            position: relative;
         }
         td, th {
             border: 1px solid black;
             padding: 10px;
+        }
+
+        tbody tr:nth-child(odd){
+            background-color: lightgray;
+        }
+        thead > tr > th{
+            position: sticky;
+            top: 0;
+            background-color: gray;
         }
         thead, tfoot {
             background-color: gray;
